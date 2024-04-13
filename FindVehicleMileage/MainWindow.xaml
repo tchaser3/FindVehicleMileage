@@ -1,0 +1,18 @@
+﻿<Window x:Class="FindVehicleMileage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        WindowStartupLocation="CenterScreen"
+        xmlns:local="clr-namespace:FindVehicleMileage"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="900" Width="1200" Loaded="Window_Loaded">
+    <Grid>
+        <DataGrid x:Name="dgrResults" HorizontalAlignment="Left" Height="759" Margin="10,100,0,0" VerticalAlignment="Top" Width="975" AlternationCount="1" RowBackground="AliceBlue" AlternatingRowBackground="LightBlue" IsReadOnly="True"/>
+        <Button x:Name="btnCopyToExcel" FontSize="30" HorizontalAlignment="Left" Margin="1002,303,0,0" VerticalAlignment="Top" Width="180" Height="87" Click="btnCopyToExcel_Click">
+            <TextBlock TextWrapping="Wrap" Text="Copy To Excel" TextAlignment="Center"/>
+        </Button>
+        <Label x:Name="lblTitle" Content="Find Vehicle Mileages" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="69" Width="1172"/>
+
+    </Grid>
+</Window>

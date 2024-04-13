@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VehicleMileagleDataSet" targetNamespace="http://tempuri.org/VehicleMileagleDataSet.xsd" xmlns:mstns="http://tempuri.org/VehicleMileagleDataSet.xsd" xmlns="http://tempuri.org/VehicleMileagleDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VehicleMileagleDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="VehicleMileagleDataSet" msprop:Generator_UserDSName="VehicleMileagleDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vehiclemileage" msprop:Generator_TableClassName="vehiclemileageDataTable" msprop:Generator_TableVarName="tablevehiclemileage" msprop:Generator_RowChangedName="vehiclemileageRowChanged" msprop:Generator_TablePropName="vehiclemileage" msprop:Generator_RowDeletingName="vehiclemileageRowDeleting" msprop:Generator_RowChangingName="vehiclemileageRowChanging" msprop:Generator_RowEvHandlerName="vehiclemileageRowChangeEventHandler" msprop:Generator_RowDeletedName="vehiclemileageRowDeleted" msprop:Generator_RowClassName="vehiclemileageRow" msprop:Generator_UserTableName="vehiclemileage" msprop:Generator_RowEvArgName="vehiclemileageRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VehicleID" msprop:Generator_ColumnVarNameInTable="columnVehicleID" msprop:Generator_ColumnPropNameInRow="VehicleID" msprop:Generator_ColumnPropNameInTable="VehicleIDColumn" msprop:Generator_UserColumnName="VehicleID" type="xs:int" />
+              <xs:element name="VehicleNumber" msprop:Generator_ColumnVarNameInTable="columnVehicleNumber" msprop:Generator_ColumnPropNameInRow="VehicleNumber" msprop:Generator_ColumnPropNameInTable="VehicleNumberColumn" msprop:Generator_UserColumnName="VehicleNumber" type="xs:string" />
+              <xs:element name="VehicleYear" msprop:Generator_ColumnVarNameInTable="columnVehicleYear" msprop:Generator_ColumnPropNameInRow="VehicleYear" msprop:Generator_ColumnPropNameInTable="VehicleYearColumn" msprop:Generator_UserColumnName="VehicleYear" type="xs:string" />
+              <xs:element name="VehicleManufacturer" msprop:Generator_ColumnVarNameInTable="columnVehicleManufacturer" msprop:Generator_ColumnPropNameInRow="VehicleManufacturer" msprop:Generator_ColumnPropNameInTable="VehicleManufacturerColumn" msprop:Generator_UserColumnName="VehicleManufacturer" type="xs:string" />
+              <xs:element name="VehicleModel" msprop:Generator_ColumnVarNameInTable="columnVehicleModel" msprop:Generator_ColumnPropNameInRow="VehicleModel" msprop:Generator_ColumnPropNameInTable="VehicleModelColumn" msprop:Generator_UserColumnName="VehicleModel" type="xs:string" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" />
+              <xs:element name="AssigedOffice" msprop:Generator_ColumnVarNameInTable="columnAssigedOffice" msprop:Generator_ColumnPropNameInRow="AssigedOffice" msprop:Generator_ColumnPropNameInTable="AssigedOfficeColumn" msprop:Generator_UserColumnName="AssigedOffice" type="xs:string" />
+              <xs:element name="VINNumber" msprop:Generator_ColumnVarNameInTable="columnVINNumber" msprop:Generator_ColumnPropNameInRow="VINNumber" msprop:Generator_ColumnPropNameInTable="VINNumberColumn" msprop:Generator_UserColumnName="VINNumber" type="xs:string" />
+              <xs:element name="Odometer" msprop:Generator_ColumnVarNameInTable="columnOdometer" msprop:Generator_ColumnPropNameInRow="Odometer" msprop:Generator_ColumnPropNameInTable="OdometerColumn" msprop:Generator_UserColumnName="Odometer" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vehiclemileage" />
+      <xs:field xpath="mstns:VehicleID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
